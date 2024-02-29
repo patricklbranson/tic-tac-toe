@@ -12,13 +12,10 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-from game import Board
+import typing
 
 
-def main():
-    board: Board = Board()
-    board.mainloop()
-
-
-if __name__ == "__main__":
-    main()
+class Move(typing.NamedTuple):
+    row: int
+    column: int
+    label: str = ""

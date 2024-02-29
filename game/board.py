@@ -12,13 +12,21 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-from game import Board
+import tkinter
 
 
-def main():
-    board: Board = Board()
-    board.mainloop()
+class Board(tkinter.Tk):
 
+    def __init__(self):
+        super().__init__()
+        self.title("Python Tic-Tac-Toe Game")
 
-if __name__ == "__main__":
-    main()
+        self.__cells = {}
+        self.__init_board_display()
+        self.__init_board_grid()
+
+    def __init_board_display(self):
+        pass
+
+    def __init_board_grid(self):
+        pass

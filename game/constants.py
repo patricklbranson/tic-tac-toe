@@ -12,13 +12,14 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-from game import Board
+from player import Player
 
+GRID_SIZE: int = 3
+"""
+The default grid size
+"""
 
-def main():
-    board: Board = Board()
-    board.mainloop()
-
-
-if __name__ == "__main__":
-    main()
+DEFAULT_PLAYERS: tuple[Player, Player] = (Player(label="X", color="blue"), Player(label="O", color="green"))
+"""
+The default two element array of players: X and O
+"""

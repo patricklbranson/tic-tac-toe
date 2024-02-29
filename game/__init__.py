@@ -12,13 +12,4 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-from game import Board
-
-
-def main():
-    board: Board = Board()
-    board.mainloop()
-
-
-if __name__ == "__main__":
-    main()
+from board import Board
